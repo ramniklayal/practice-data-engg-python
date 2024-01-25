@@ -10,6 +10,7 @@ print("I love " + celebrity)
 """
 
 # Guessing game
+"""
 secret_word = "giraffe"
 guess = ""
 guess_count = 0
@@ -27,5 +28,18 @@ if out_of_guesses:
     print("Out of guesses, you lose!")
 else:    
     print("You win!")
+"""
 
+# Basic translator
+# for simplicity, all vowels are replaced by g in this language
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter in "AEIOUaeiou":
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("Enter a pchrase: ")))
 
