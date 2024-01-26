@@ -32,6 +32,7 @@ else:
 
 # Basic translator
 # for simplicity, all vowels are replaced by g in this language
+"""
 def translate(phrase):
     translation = ""
     for letter in phrase:
@@ -42,4 +43,14 @@ def translate(phrase):
     return translation
 
 print(translate(input("Enter a pchrase: ")))
+"""
 
+
+# Try / except
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
+    print("Invalid input")
