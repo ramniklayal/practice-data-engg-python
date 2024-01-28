@@ -47,10 +47,19 @@ print(translate(input("Enter a pchrase: ")))
 
 
 # Try / except
-try:
+"""
+    try:
     number = int(input("Enter a number: "))
     print(number)
 except ZeroDivisionError as err:
     print(err)
 except ValueError:
     print("Invalid input")
+"""
+
+# Reading and writing files
+# open("example.txt", "r")
+# r = read
+# w = write
+# a = append info to end of the file
+# r+ = read and write
